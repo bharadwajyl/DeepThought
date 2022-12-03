@@ -1,0 +1,163 @@
+/*MAIN*/
+main{
+    margin:3rem;
+    box-shadow:0px 6px 16px -6px rgba(1,1,1,0.5);
+    border-radius:10px;
+    overflow:hidden;
+}
+
+main .title{
+    background-color:var(--primary);
+    color:var(--white);
+    padding:0.5rem 1rem;
+    margin:0;
+    font-weight:400;
+}
+
+.container{
+    padding:3rem;
+}
+
+.accordion{
+    width:47.5%;
+    display:inline-block;
+    box-shadow:0px 6px 16px -6px rgba(1,1,1,0.5);
+    border-radius:10px;
+    overflow:hidden;
+    vertical-align:top;
+    margin:1%;
+}
+
+@media (max-width:920px){
+    main{
+        margin:1rem 0;
+    }
+    
+    .container{
+        padding:1rem;
+    }
+    
+    .accordion{
+        width:100%;
+        margin:1% 0;
+    }
+}
+
+.accordion label{
+    width:100%;
+    padding:0.5rem 1rem;
+    background-color:var(--black);
+    color:var(--white);
+    font-size:1em;
+    display:block;
+    position:relative;
+}
+
+.accordion label:after, .accordion ul label strong:before{
+    content:"\f107";
+    font-family:"FontAwesome";
+    position:absolute;
+    right:0;
+    top:50%;
+    transform:translate(-100%, -50%);
+}
+
+.accordion .threads{
+    display:none;
+}
+
+.accordion label input{
+    display:none;
+}
+
+.accordion article{
+    height:0;
+    overflow:hidden;
+    transition:0.5s;
+    overflow-y:auto;
+}
+
+.accordion object, .accordion img, .accordion iframe{
+    width:100%;
+    height:100%;
+}
+
+.accordion audio{
+    width:100%;
+    background-color:#e5e5e5;
+    padding:2rem;
+}
+
+.accordion ul label{
+    background-color:transparent;
+}
+
+.accordion ul label strong{
+    color:rgba(1,1,1,0.6);
+    padding:0.5rem;
+    border-top:1px solid rgba(1,1,1,0.1);
+    border-bottom:1px solid rgba(1,1,1,0.1);
+    display:block;
+    position:relative;
+    overflow:hidden;
+    width:100%;
+}
+
+.accordion ul div{
+    padding:0.5rem 0;
+}
+
+.accordion ul .thread_s1 section{
+    background-color:#e5e5e5;
+    border-radius:10px;
+    overflow:hidden;
+    margin:1%;
+    box-shadow:0px 6px 16px -6px rgba(1,1,1,0.5);
+}
+
+.accordion ul .thread_s1 section h6{
+    font-weight:400;
+    margin:0;
+    padding:0.5rem 1rem;
+    color:rgba(1,1,1,0.7);
+}
+
+.accordion textarea{
+    padding:1rem;
+    width:100%;
+    border:0;
+    resize:none;
+}
+
+.accordion .thread_s2 a, .accordion .thread_s2 select{
+    margin:0 1%;
+    color:var(--black);
+}
+
+.accordion .thread_s2 select{
+    padding:0.5rem;
+    border:0;
+    box-shadow:0px 6px 16px -6px rgba(1,1,1,0.5);
+    background-color:var(--white);
+}
+
+.accordion .create_thread, .accordion .create_example{
+    text-align:right;
+    margin:2vh auto;
+    display:block;
+}
+
+.accordion .sub_thread_s2{
+    align-items:center;
+    justify-content:space-between;
+}
+
+.accordion_8 .thread_s1{
+    flex-wrap:wrap;
+}
+
+.accordion_8 label:nth-child(1) strong, .accordion_8 label:last-child strong{
+    background-color:#e5e5e5;
+    border-top:0;
+    border-bottom:0;
+}
